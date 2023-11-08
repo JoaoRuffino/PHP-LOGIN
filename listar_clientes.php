@@ -32,7 +32,7 @@ $consulta->execute();
          echo "<td><a href='excluir_cliente.php?id={$linha['cliId']}' class='btn-floating blue'><i class='material-icons'>delete</i></a></td></tr>";
       }
       echo "</table> <br/><br/>";
-      echo "<a href='cadastro.php' class='btn'>Adicionar cliente</a>";
+      echo "<a href='form_cadastrar_clientes.php' class='btn'>Adicionar cliente</a>";
    
       ?>
 

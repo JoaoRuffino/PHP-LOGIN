@@ -9,7 +9,7 @@ if(isset($_POST['btncadastrar'])){
     $cliTelefone = filter_input(INPUT_POST, 'txtfone');
     $cliDataNasc = filter_input(INPUT_POST, 'txtdatanasc');
     
-    $query = $conexao->prepare('INSERT INTO tab clientes (cliNome, cliTelefone, cliDataNasc) VALUES (:cliNome, :cliTelefone, :cliDataNasc)');
+    $query = $conexao->prepare('INSERT INTO tabclientes (cliNome, cliTelefone, cliDataNasc) VALUES (:cliNome, :cliTelefone, :cliDataNasc)');
     
     $query->bindvalue(':cliNome', $cliNome, PDO::PARAM_STR);
     $query->bindvalue(':cliTelefone', $cliTelefone, PDO::PARAM_STR);
@@ -18,5 +18,9 @@ if(isset($_POST['btncadastrar'])){
     $query->execute();
 
 }
+
+header('Location: form_cadastrar_clientes.php');
+
+
 ?>
 

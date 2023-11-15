@@ -33,6 +33,21 @@ $consulta->execute();
       }
       echo "</table> <br/><br/>";
       echo "<a href='form_cadastrar_clientes.php' class='btn'>Adicionar cliente</a>";
+      
    
       ?>
+
+<div style="margin:10px;">
+   <!--Formulário para pesquisa-->
+   <form action="consulta_clientes.php" method="get">
+      Pesquisar por:
+      <input type="text" name="txtPesquisar" id="pesquisar"  placeholder="Digite o valor">
+      <br><br>
+      <input type="submit" name="btnPesquisar" id="pesquisaCliente">
+      <input type="reset" name="btnLimpar" id="limpar" value="Limpar">
+
+   </form>
+</div>
+
+
 

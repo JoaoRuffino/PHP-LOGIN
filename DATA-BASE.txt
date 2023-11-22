@@ -17,3 +17,17 @@ insert into tabclientes (cliNome, cliTelefone, cliDataNasc) values ('Jorge Apare
 ('Isabella Cardoso Pereira', '(11) 93412795', '2003-10-03');
 
 select * from tabclientes;
+
+CREATE DATABASE funcionarios;
+
+use funcionarios;
+
+CREATE TABLE tabfuncionarios (
+  funId int(11) PRIMARY KEY NOT NULL auto_Increment,
+  funNome  varchar(30) NOT NULL,
+  funSenha varchar(10) NOT NULL,
+  funEmail varchar(50) NOT NULL,
+  funCargo varchar(20) NOT NULL,
+  funUsuario varchar(10) NOT NULL,
+  funFoto varchar(18) NOT NULL
+);

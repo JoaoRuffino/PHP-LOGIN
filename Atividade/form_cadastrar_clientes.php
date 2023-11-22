@@ -42,6 +42,8 @@
             </div>
             <button type="submit" class="btn" name="btncadastrar">Cadastrar </button>
             <a href="listar_clientes.php" class="btn green">Listar clientes</a>
+            <a href="login.php" class="btn blue">Login</a>
+
          </form>
       </div>
    </div>

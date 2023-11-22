@@ -8,12 +8,12 @@ include_once('cabecalho.html');
 $consulta = $conexao->prepare('Select * from tabfuncionarios');
 $consulta->execute();
 ?>
-<title>Lista de clientes</title>
+<title>Lista de Funcionários</title>
 </head>
 
 
 <body>
-   <h2>Listagem de clientes</h2>
+   <h2>Listagem de Funcionários</h2>
    <table>
       <tr>
          <th>Código</th>
@@ -32,11 +32,11 @@ $consulta->execute();
          echo "<td>{$linha['funEmail']}</td>";
          echo "<td>{$linha['funCargo']}</td>";
          echo "<td>{$linha['funUsuario']}</td>";
-         echo "<td>{$linha['funFoto']}</td>";
+         echo "<td><img style='width:60px' src='imagens/{$linha['funFoto']}.jpg'</td>";
         
       }
       echo "</table> <br/><br/>";
-      echo "<a href='form_cadastrar_clientes.php' class='btn'>Adicionar cliente</a>";
+      echo "<a href='form_cadastrar_clientes.php' class='btn'>Adicionar Funcionário</a>";
       
    
       ?>
